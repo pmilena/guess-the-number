@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Mogra|Vibur|Barrio");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background: linear-gradient(
+    #000 0%,
+    #040d1a 33.33%,
+    #04070b 66.67%,
+    #01080e 100%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  border: 3px solid gold;
+  background: #242424;
+  box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+  position: relative;
+}
+
+.container__conteudo {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+
+.container__informacoes {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__botao {
+  border-radius: 16px;
+  background: #5e176f;
+  padding: 16px 24px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  margin-top: 2rem;
+}
+
+.container__texto {
+  margin: 16px 0 16px 0;
+  text-align: center;
+}
+
+/* .container__texto-black {
+  color: #242424;
+} */
+
+.container__input {
+  width: 90%;
+  height: 72px;
+  border-radius: 16px;
+  background-color: #fff;
+  border: none;
+  color: #5e176f;
+  padding: 2rem;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Mogra", sans-serif;
+}
+
+.container__botoes {
+  display: flex;
+  gap: 0.8em;
+}
+
+h1 {
+  font-family: "Barrio", sans-serif;
+  font-size: 100px;
+  padding-bottom: 3rem;
+  color: gold;
+  text-align: center;
+}
+
+p,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.texto__paragrafo {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: initial;
+}
+
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .container__botao {
+    font-size: 14px;
+  }
+
+  .texto__paragrafo {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .container__informacoes {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
